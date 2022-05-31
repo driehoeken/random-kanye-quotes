@@ -14,6 +14,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 #quote-container{
     width: 500px;
@@ -36,4 +37,16 @@ body{
 #quote, #name{
     color: #FFFFFF;
     width: 80%;
+}
+#new-quote{
+    background-color: #FFF;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 530px) {
+    #quote-container{
+        width: 95%;
+    }
 }

@@ -1,4 +1,5 @@
 const quote = document.querySelector('#quote');
+const button = document.querySelector('#new-quote')
 
 const getQuote = async function(){
     try{
@@ -15,5 +16,9 @@ const getQuote = async function(){
 };
 
 const setQuote = function(){
-    getQuote().then((result) => quote.innerHTML = result);
+    getQuote().then((result) => quote.innerHTML = '"' + result + '"');
 }
+
+button.addEventListener('click', setQuote);
+
+setQuote()
