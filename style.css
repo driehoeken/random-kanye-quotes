@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('src/kanye.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#half-black{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#quote-container{
+    width: 500px;
+    min-height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#quote{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    word-wrap: break-word;
+}
+#name{
+    text-align: right;
+}
+#quote, #name{
+    color: #FFFFFF;
+    width: 80%;
+}
